@@ -22,7 +22,7 @@ const CategorySection = () => {
         },
     ];
   return (
-    <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <div className="container mx-auto flex flex-wrap justify-center items-center gap-8 sm:grid sm:grid-cols-2 md:grid-cols-4">
         {Categories.map((category, index) =>(
             <div key={index} className="relative h-64 w-60 rounded-full text-center shadow transform transition-transform duration-300 hover:scale-105 cursor-pointer">
                 <img src={category.image} alt="" className="w-full h-full object-cover rounded-full shadow-md" />
